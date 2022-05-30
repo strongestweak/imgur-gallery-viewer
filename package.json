@@ -1,0 +1,78 @@
+{
+  "name": "imgur-gallery-viewer",
+  "productName": "Imgur Gallery viewer",
+  "version": "0.1.0",
+  "private": true,
+  "main": "electron.js",
+  "homepage": "./",
+  "scripts": {
+    "start": "react-scripts start",
+    "react-build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "electron:dev": "electron ./electron.js",
+    "electron:build:mac": "yarn react-build && electron-packager . --overwrite --platform=darwin --arch=x64 --prune=true --out=release-builds --ignore=\".git(ignore|modules)\"",
+    "electron:build:win": "yarn react-build && electron-packager . --overwrite --asar=true --platform=win32 --arch=ia32 --prune=true --out=release-builds --version-string.CompanyName=CE --version-string.FileDescription=CE",
+    "docs": "jsdoc -c jsdoc.conf.json"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest",
+      "plugin:prettier/recommended"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "dependencies": {
+    "electron-is-dev": "^2.0.0"
+  },
+  "devDependencies": {
+    "@emotion/react": "^11.9.0",
+    "@emotion/styled": "^11.8.1",
+    "@fontsource/roboto": "^4.5.7",
+    "@mui/icons-material": "^5.8.0",
+    "@mui/material": "^5.8.1",
+    "@mui/styled-engine-sc": "^5.8.0",
+    "@testing-library/jest-dom": "^5.16.4",
+    "@testing-library/react": "^13.2.0",
+    "@testing-library/user-event": "^13.5.0",
+    "@types/jest": "^27.5.1",
+    "@types/node": "^16.11.36",
+    "@types/react": "^18.0.9",
+    "@types/react-dom": "^18.0.5",
+    "@types/react-helmet": "^6.1.5",
+    "@types/react-lazy-load-image-component": "^1.5.2",
+    "axios": "^0.27.2",
+    "better-docs": "^2.7.2",
+    "electron": "^19.0.0",
+    "electron-packager": "^15.5.1",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-prettier": "^4.0.0",
+    "jsdoc": "^3.6.10",
+    "material-icons": "^1.10.11",
+    "parcel-bundler": "^1.12.5",
+    "prettier": "^2.5.1",
+    "react": "^18.1.0",
+    "react-docgen-typescript": "^2.2.2",
+    "react-dom": "^18.1.0",
+    "react-helmet": "^6.1.0",
+    "react-lazy-load-image-component": "^1.5.4",
+    "react-notifications-component": "^4.0.1",
+    "react-scripts": "5.0.1",
+    "react-simple-image-viewer": "^1.2.1",
+    "styled-components": "^5.3.5",
+    "typescript": "^4.6.4",
+    "web-vitals": "^2.1.4"
+  }
+}

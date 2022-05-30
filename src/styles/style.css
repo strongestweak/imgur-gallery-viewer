@@ -1,0 +1,18 @@
+html,
+body,
+#root {
+  margin: 0;
+  height: 100%;
+}
+
+.rnc__base {
+  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+}
+
+span.lazy-load-image-loaded {
+  height: 100%;
+  display: flex !important;
+}
+span.lazy-load-image-loaded:hover {
+  opacity: 0.75;
+}
